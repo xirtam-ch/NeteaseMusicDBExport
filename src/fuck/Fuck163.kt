@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
                 arts += line.name + ","
             }
             val path = "$savePath${playLists.name.replace("/", "-")}.txt"
-            File(savePath).mkdir()
+            File(savePath).mkdirs()
             File(path).appendText(fromJson.name + " - " + arts + "\n")
         }
     }
