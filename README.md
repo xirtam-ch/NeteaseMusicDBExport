@@ -16,3 +16,7 @@
 
 - 我的mac上DB文件参考位置
 `/Users/xirtam/Library/Containers/com.netease.163music/Data/Documents/storage/sqlite_storage.sqlite3`
+
+# 导入到Spotify或者其他平台
+- 使用文本导入工具，例如 https://www.tunemymusic.com/zh-cn/
+- 开始 -> 从文本 -> 粘贴 -> 目的地 -> Spotify
