@@ -11,3 +11,8 @@
 - Java
 
 # 用法
+
+- `java -jar export.jar $DBFilePath $outputPath`
+
+- 我的mac上DB文件参考位置
+`/Users/xirtam/Library/Containers/com.netease.163music/Data/Documents/storage/sqlite_storage.sqlite3`
