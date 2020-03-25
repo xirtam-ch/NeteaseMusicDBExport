@@ -24,12 +24,9 @@ fun main(args: Array<String>) {
             for (line in fromJson.artists) {
                 arts += line.name + ","
             }
-            File(
-                "$savePath${playLists.name.replace(
-                    "/",
-                    "-"
-                )}.txt"
-            ).appendText(fromJson.name + " - " + arts + "\n")
+            val path = "$savePath${playLists.name.replace("/", "-")}.txt"
+            File(savePath).mkdir()
+            File(path).appendText(fromJson.name + " - " + arts + "\n")
         }
     }
 
