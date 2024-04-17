@@ -12,7 +12,7 @@
 
 # 用法
 
-- `java -jar NeteaseMusicDBExport.jar $DBFilePath $outputPath`
+- `java -jar NeteaseMusicDBExport.jar 数据库文件路径
 
 - 我的mac上DB文件参考位置
 `/Users/xirtam/Library/Containers/com.netease.163music/Data/Documents/storage/sqlite_storage.sqlite3`

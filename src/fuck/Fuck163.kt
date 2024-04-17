@@ -7,27 +7,31 @@ import java.sql.DriverManager
 import java.sql.Statement
 
 fun main(args: Array<String>) {
-    if (args.size < 2) {
-        println("Usage: java -jar xxx.jar dbFilePath outputPath")
+    if (args.isEmpty()) {
+        println("Usage: java -jar xxx.jar dbFilePath")
         return
     }
 
     val dbFilePath = args[0]
-    val savePath = args[1]
+    val savePath = "./playlist"
+    File(savePath).mkdirs()
 
     initDB(dbFilePath)
 
     getPlayLists()?.forEach { playLists ->
+        println(playLists.name)
+        var allSongs = ""
         getSonsByPid("${playLists.id}")?.forEach {
             val fromJson = Gson().fromJson<JsonRootBean>(it, JsonRootBean::class.java)
             var arts = ""
             for (line in fromJson.artists) {
                 arts += line.name + ","
             }
-            val path = "$savePath${playLists.name.replace("/", "-")}.txt"
-            File(savePath).mkdirs()
-            File(path).appendText(fromJson.name + " - " + arts + "\n")
+            allSongs += (fromJson.name + " - " + arts + "\n")
         }
+        val path = "$savePath/${playLists.name.replace("/", "-")}.txt"
+        print(path)
+        File(path).appendText(allSongs)
     }
 
     closeDB()
@@ -46,7 +50,6 @@ fun initDB(dbFilePath: String) {
 
 fun getPlayLists(): List<PlayListBean>? {
     val rs = stmt?.executeQuery("SELECT playlist FROM web_playlist;") ?: return null
-
     val pids = mutableListOf<PlayListBean>()
     while (rs.next()) {
         pids.add(Gson().fromJson(rs.getString(1), PlayListBean::class.java))

@@ -1,260 +1,246 @@
-/**
- * Copyright 2020 bejson.com
- */
+/* Copyright 2024 freecodeformat.com */
 package fuck;
-
 import java.util.List;
-
-/**
- * Auto-generated: 2020-03-24 19:34:2
- *
- * @author bejson.com (i@bejson.com)
- * @website http://www.bejson.com/java2pojo/
- */
 public class JsonRootBean {
 
     private Album album;
     private List<String> alias;
     private List<Artists> artists;
-    private String commentThreadId;
-    private long copyrightId;
-    private long duration;
+    private String commentthreadid;
+    private int copyrightid;
+    private int duration;
     private int id;
+    private String alg;
     private int mvid;
     private String name;
     private String cd;
     private int position;
     private String ringtone;
-    private String rtUrl;
+    private String rturl;
     private int status;
     private int pstatus;
     private int fee;
     private int version;
-    private int songType;
+    private int songtype;
     private int mst;
     private int popularity;
     private int ftype;
-    private List<String> rtUrls;
-    private String yunSong;
-    private HMusic hMusic;
-    private MMusic mMusic;
-    private LMusic lMusic;
+    private List<String> rturls;
+    private String nocopyrightrcmd;
+    private int origincovertype;
+    private Yunsong yunsong;
+    private HMusic hmusic;
+    private MMusic mmusic;
+    private LMusic lmusic;
     private Privilege privilege;
-
-    public Album getAlbum() {
-        return album;
-    }
-
     public void setAlbum(Album album) {
         this.album = album;
     }
-
-    public List<String> getAlias() {
-        return alias;
+    public Album getAlbum() {
+        return album;
     }
 
     public void setAlias(List<String> alias) {
         this.alias = alias;
     }
-
-    public List<Artists> getArtists() {
-        return artists;
+    public List<String> getAlias() {
+        return alias;
     }
 
     public void setArtists(List<Artists> artists) {
         this.artists = artists;
     }
-
-    public String getCommentThreadId() {
-        return commentThreadId;
+    public List<Artists> getArtists() {
+        return artists;
     }
 
-    public void setCommentThreadId(String commentThreadId) {
-        this.commentThreadId = commentThreadId;
+    public void setCommentthreadid(String commentthreadid) {
+        this.commentthreadid = commentthreadid;
+    }
+    public String getCommentthreadid() {
+        return commentthreadid;
     }
 
-    public long getCopyrightId() {
-        return copyrightId;
+    public void setCopyrightid(int copyrightid) {
+        this.copyrightid = copyrightid;
+    }
+    public int getCopyrightid() {
+        return copyrightid;
     }
 
-    public void setCopyrightId(long copyrightId) {
-        this.copyrightId = copyrightId;
-    }
-
-    public long getDuration() {
-        return duration;
-    }
-
-    public void setDuration(long duration) {
+    public void setDuration(int duration) {
         this.duration = duration;
     }
-
-    public int getId() {
-        return id;
+    public int getDuration() {
+        return duration;
     }
 
     public void setId(int id) {
         this.id = id;
     }
+    public int getId() {
+        return id;
+    }
 
-    public int getMvid() {
-        return mvid;
+    public void setAlg(String alg) {
+        this.alg = alg;
+    }
+    public String getAlg() {
+        return alg;
     }
 
     public void setMvid(int mvid) {
         this.mvid = mvid;
     }
-
-    public String getName() {
-        return name;
+    public int getMvid() {
+        return mvid;
     }
 
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getCd() {
-        return cd;
+    public String getName() {
+        return name;
     }
 
     public void setCd(String cd) {
         this.cd = cd;
     }
-
-    public int getPosition() {
-        return position;
+    public String getCd() {
+        return cd;
     }
 
     public void setPosition(int position) {
         this.position = position;
     }
-
-    public String getRingtone() {
-        return ringtone;
+    public int getPosition() {
+        return position;
     }
 
     public void setRingtone(String ringtone) {
         this.ringtone = ringtone;
     }
-
-    public String getRtUrl() {
-        return rtUrl;
+    public String getRingtone() {
+        return ringtone;
     }
 
-    public void setRtUrl(String rtUrl) {
-        this.rtUrl = rtUrl;
+    public void setRturl(String rturl) {
+        this.rturl = rturl;
     }
-
-    public int getStatus() {
-        return status;
+    public String getRturl() {
+        return rturl;
     }
 
     public void setStatus(int status) {
         this.status = status;
     }
-
-    public int getPstatus() {
-        return pstatus;
+    public int getStatus() {
+        return status;
     }
 
     public void setPstatus(int pstatus) {
         this.pstatus = pstatus;
     }
-
-    public int getFee() {
-        return fee;
+    public int getPstatus() {
+        return pstatus;
     }
 
     public void setFee(int fee) {
         this.fee = fee;
     }
-
-    public int getVersion() {
-        return version;
+    public int getFee() {
+        return fee;
     }
 
     public void setVersion(int version) {
         this.version = version;
     }
-
-    public int getSongType() {
-        return songType;
+    public int getVersion() {
+        return version;
     }
 
-    public void setSongType(int songType) {
-        this.songType = songType;
+    public void setSongtype(int songtype) {
+        this.songtype = songtype;
     }
-
-    public int getMst() {
-        return mst;
+    public int getSongtype() {
+        return songtype;
     }
 
     public void setMst(int mst) {
         this.mst = mst;
     }
-
-    public int getPopularity() {
-        return popularity;
+    public int getMst() {
+        return mst;
     }
 
     public void setPopularity(int popularity) {
         this.popularity = popularity;
     }
-
-    public int getFtype() {
-        return ftype;
+    public int getPopularity() {
+        return popularity;
     }
 
     public void setFtype(int ftype) {
         this.ftype = ftype;
     }
-
-    public List<String> getRtUrls() {
-        return rtUrls;
+    public int getFtype() {
+        return ftype;
     }
 
-    public void setRtUrls(List<String> rtUrls) {
-        this.rtUrls = rtUrls;
+    public void setRturls(List<String> rturls) {
+        this.rturls = rturls;
+    }
+    public List<String> getRturls() {
+        return rturls;
     }
 
-    public String getYunSong() {
-        return yunSong;
+    public void setNocopyrightrcmd(String nocopyrightrcmd) {
+        this.nocopyrightrcmd = nocopyrightrcmd;
+    }
+    public String getNocopyrightrcmd() {
+        return nocopyrightrcmd;
     }
 
-    public void setYunSong(String yunSong) {
-        this.yunSong = yunSong;
+    public void setOrigincovertype(int origincovertype) {
+        this.origincovertype = origincovertype;
+    }
+    public int getOrigincovertype() {
+        return origincovertype;
     }
 
-    public HMusic getHMusic() {
-        return hMusic;
+    public void setYunsong(Yunsong yunsong) {
+        this.yunsong = yunsong;
+    }
+    public Yunsong getYunsong() {
+        return yunsong;
     }
 
-    public void setHMusic(HMusic hMusic) {
-        this.hMusic = hMusic;
+    public void setHmusic(HMusic hmusic) {
+        this.hmusic = hmusic;
+    }
+    public HMusic getHmusic() {
+        return hmusic;
     }
 
-    public MMusic getMMusic() {
-        return mMusic;
+    public void setMmusic(MMusic mmusic) {
+        this.mmusic = mmusic;
+    }
+    public MMusic getMmusic() {
+        return mmusic;
     }
 
-    public void setMMusic(MMusic mMusic) {
-        this.mMusic = mMusic;
+    public void setLmusic(LMusic lmusic) {
+        this.lmusic = lmusic;
     }
-
-    public LMusic getLMusic() {
-        return lMusic;
-    }
-
-    public void setLMusic(LMusic lMusic) {
-        this.lMusic = lMusic;
-    }
-
-    public Privilege getPrivilege() {
-        return privilege;
+    public LMusic getLmusic() {
+        return lmusic;
     }
 
     public void setPrivilege(Privilege privilege) {
         this.privilege = privilege;
+    }
+    public Privilege getPrivilege() {
+        return privilege;
     }
 
 }

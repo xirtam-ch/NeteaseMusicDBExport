@@ -1,14 +1,5 @@
-/**
- * Copyright 2020 bejson.com
- */
 package fuck;
 
-/**
- * Auto-generated: 2020-03-24 19:34:2
- *
- * @author bejson.com (i@bejson.com)
- * @website http://www.bejson.com/java2pojo/
- */
 public class HMusic {
 
     private long bitrate;
